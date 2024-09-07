@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- animation.css library  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- font awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="container" >
+            <div class="logo">
+                Portfolio
+            </div>
+
+            <ul>
+                <li><a href="#about" onclick="targetSection('about')">About Me</a></li>
+                 <li><a href="#projects" onclick="targetSection('projects')">Projects</a></li>
+                <li><a href="#contact" onclick="targetSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" id="about" class="section">
+          <div class="container">
+            <div class="hero_image animate__animated animate__backInLeft">
+                <img src="images/hero2.png" alt="">
+            </div>
+            <div class="hero_content">
+                <h1><span class="hi_text">Hi</span> , I am <span class="name_text">Waqas Abbasi</span></h1>
+                <h2>Full Stack Developer</h2>
+              </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section hidden">
+            <h2>PROJECTS</h2>
+            <div class="container">
+                <div class="project_container">
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="images/image1.png" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h1>Business Website</h1>
+                        </div>
+                    </div>
+
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="images/image2.png" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h1>Web Services Website</h1>
+                        </div>
+                    </div>
+
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="images/image3.png" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h1>Food Delivery Website</h1>
+                        </div>
+                    </div>
+
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="images/image4.png" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h1>Restaurent Website</h1>
+                        </div>
+                    </div>
+
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="images/image5.png" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h1>Fast Food Website</h1>
+                        </div>
+                    </div>
+
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="images/image6.png" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h1>Clothing Website</h1>
+                        </div>
+                    </div>
+
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="images/image7.png" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h1>Outfit Website</h1>
+                        </div>
+                    </div>
+
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="images/image8.png" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h1>Coffee Website</h1>
+                        </div>
+                    </div>
+
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="images/image9.png" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h1>Mocktail Website</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section hidden">
+            <div class="container">
+                <h2>Let's Work togather...</h2>
+                <div class="top_contact">
+                     <div class="contact_way">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>Linkedin</h3>
+                     </div>
+
+                     <div class="contact_way">
+                        <i class="fab fa-instagram"></i>
+                        <h3>Instagram</h3>
+                     </div>
+
+                     <div class="contact_way">
+                        <h3>@ Email</h3>
+                     </div>
+                </div>
+
+
+                <div class="bottom_contact">
+                    <div class="contact_way">
+                       <i class="fab fa-github"></i>
+                       <h3>GitHub</h3>
+                    </div>
+
+                    <div class="contact_way">
+                       <i class="fab fa-mobile"></i>
+                       <h3>Mobile</h3>
+                    </div>
+               </div>
+
+               <div class="contactform">
+                <form action="" id="contactForm">
+                    <div class="heading">
+                        <h4>Contact Form</h4>
+                    </div>
+                    <div>
+                        Name: <input type="text" id="nameInput" placeholder="Enter Your Name">
+                    </div>
+                    <div>
+                        Email: <input type="email" id="emailInput" placeholder="Enter Your Email">
+                    </div>
+                    <div class="btn">
+                        <button type="submit" id="btn">Submit</button>
+                    </div>
+                </form>
+               </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <h3>All Right Reserved! Created by M. Waqas Abbasi</h3>
+            </div>
+        </footer>
+
+    </main>
+
+
+<!-- link javascript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
